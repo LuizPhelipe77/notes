@@ -1,9 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Details from './pages/Details'
+import Globalstyles from './styles/global'
+import { ThemeProvider } from 'styled-components'
+
+import theme from './styles/theme'
+
+import { Profile } from './pages/Profile'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Details />
+    <ThemeProvider theme={theme}>
+      <Globalstyles />
+      <Profile />
+    </ThemeProvider>
   </React.StrictMode>,
 )
+
+
+
+
+
+
+
