@@ -53,7 +53,6 @@ export const Avatar = styled.div`
 
         position: absolute;
         bottom: 7px;
-        right: 7px;
 
         cursor: pointer;
 
